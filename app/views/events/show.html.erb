@@ -1,35 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div data-role="header">
+  <h1><%= @event.title %></h1>
+  <%= link_to 'Home', events_url, "class" => "ui-btn-right" %>
+</div>
 
-<p>
-  <b>Title:</b>
-  <%= @event.title %>
-</p>
-
-<p>
+<div data-role="content">
   <b>Starts at:</b>
   <%= @event.starts_at %>
-</p>
-
-<p>
   <b>Ends at:</b>
   <%= @event.ends_at %>
-</p>
 
-<p>
   <b>Venue:</b>
   <%= @event.venue %>
-</p>
 
-<p>
   <b>Description:</b>
   <%= @event.description %>
-</p>
-
-<p>
   <b>Band:</b>
   <%= @event.band %>
-</p>
-
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+</div>
