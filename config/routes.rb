@@ -1,6 +1,8 @@
 TheRock::Application.routes.draw do
   resources :events
-  root :to => "events#index"
+  resources :venues
+#  root :to => "events#index"
+  root :to => "venues#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

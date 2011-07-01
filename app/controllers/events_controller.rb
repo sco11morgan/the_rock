@@ -2,7 +2,9 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.xml
   def index
-    @events = Event.all
+    puts "param #{params[:venue]}"
+
+    @events = params[:venue] ? Event.where(:venue => params[:venue]) : Event.all
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,14 +1,13 @@
 <div data-role="header">
-    <h1>Rock Events</h1>
+    <h1>Concerts</h1>
     <%= link_to 'Add', new_event_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
-
 </div>
 
 <div data-role="content">
     <ul data-role="listview"  data-filter="true" >
         <% @events.each do |event| %>
             <li>
-                <%= link_to event.band, event %>
+                <%= link_to (event.starts_at.strftime( '%b %d') + ' - ' + event.band), event %>
                 <%= link_to 'edit event', edit_event_path(event), "data-icon" => "gear" %>
             </li>
         <% end %>
