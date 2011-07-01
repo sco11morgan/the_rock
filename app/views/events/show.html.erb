@@ -4,16 +4,24 @@
 </div>
 
 <div data-role="content">
-  <b>Starts at:</b>
-  <%= @event.starts_at %>
-  <b>Ends at:</b>
-  <%= @event.ends_at %>
+    <p>
+        <b>Date:</b>
+        <%= @event.starts_at.strftime( '%b %d') %>
+    </p>
 
-  <b>Venue:</b>
-  <%= @event.venue %>
+    <p>
+        <b>Band:</b>
+        <%= @event.band %>
+    </p>
 
-  <b>Description:</b>
-  <%= @event.description %>
-  <b>Band:</b>
-  <%= @event.band %>
+    <p>
+        <b>Venue:</b>
+        <%= @event.venue %>
+    </p>
+
+    <p>
+        <b>Description:</b>
+        <%= @event.description %>
+    </p>
+
 </div>

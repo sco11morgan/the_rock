@@ -8,7 +8,6 @@
         <% @events.each do |event| %>
             <li>
                 <%= link_to (event.starts_at.strftime( '%b %d') + ' - ' + event.band), event %>
-                <%= link_to 'edit event', edit_event_path(event), "data-icon" => "gear" %>
             </li>
         <% end %>
     </ul>
