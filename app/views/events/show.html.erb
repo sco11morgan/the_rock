@@ -4,24 +4,10 @@
 </div>
 
 <div data-role="content">
+    <h2 >
+        @<%= @event.venue %>
     <p>
-        <b>Date:</b>
-        <%= @event.starts_at.strftime( '%b %d') %>
-    </p>
-
-    <p>
-        <b>Band:</b>
-        <%= @event.band %>
-    </p>
-
-    <p>
-        <b>Venue:</b>
-        <%= @event.venue %>
-    </p>
-
-    <p>
-        <b>Description:</b>
         <%= @event.description %>
     </p>
-
+    </h2>
 </div>
