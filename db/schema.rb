@@ -23,4 +23,5 @@ ActiveRecord::Schema.define(:version => 20110628031554) do
     t.datetime "updated_at"
   end
 
+
 end
