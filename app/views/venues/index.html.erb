@@ -4,16 +4,25 @@
 
 <div data-role="content" >
     <ul data-role="listview"  data-filter="true" >
+        <li  data-role="list-divider" class="">
+            Top Venues
+        </li>
         <% @events.each do |event| %>
             <li>
                 <%= link_to event.venue, events_path(:venue => event.venue)%>
             </li>
         <% end %>
+        <li  data-role="list-divider" class="">
+            Links
+        </li>
         <li>
-            <%= link_to 'All Venues', venues_path(:all => true)%>
+            <%= link_to 'Events @ Top Venues', events_path(:cool => true)%>
         </li>
         <li>
             <%= link_to 'All Events', events_path %>
+        </li>
+        <li>
+            <%= link_to 'All Venues', venues_path(:all => true)%>
         </li>
     </ul>
 </div>

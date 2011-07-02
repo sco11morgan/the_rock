@@ -2,9 +2,14 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.xml
   def index
-    puts "param #{params[:venue]}"
 
-    @events = params[:venue] ? Event.where(:venue => params[:venue]) : Event.all
+    if (params[:cool])
+      cool_venues = ['Bottom of the Hill', 'Cafe Du Nord', 'Fillmore', 'Great American Music Hall', 'Independent' , "Slim's", 'Warfield']
+      @events = Event.all(:conditions => {:venue => cool_venues})
+    else
+      @events = params[:venue] ? Event.where(:venue => params[:venue]) : Event.all
+    end
+
 
     respond_to do |format|
       format.html # index.html.erb
