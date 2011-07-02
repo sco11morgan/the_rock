@@ -3,12 +3,21 @@ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "htt
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
+<!--
     $('[data-role=page]').live('pageshow', function (event, ui) {
+        var url = window.location.toString();
+        var hashLocation = url.indexOf("#");
+        if (hashLocation != -1) {
+            url = url.substring(hashLocation + 1);
+        }
+        else {
+            url = window.location.pathname.toString();
+        }
+
         try {
             var pageTracker = _gat._getTracker("UA-24322365-1");
-            pageTracker._trackPageview();
-        } catch(err) {
-
-        }
+            pageTracker._trackPageview(url);
+        } catch (err) { }
     });
+//-->
 </script>
