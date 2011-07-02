@@ -1,7 +1,7 @@
 == The Rock
 
 This is a jQuery Mobile version of Steve Koepke's San Francisco Concert Guide.  The List is
-published every Friday and the website link:therock.heroku.com updates soon after.
+published every Friday and the website link:http://therock.heroku.com updates soon after.
 
-For the full file see Steve's website link:stevelist.com
+For the full file see Steve's website link:http://stevelist.com
 
