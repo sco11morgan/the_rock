@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(:version => 20110628031554) do
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.string   "venue"
-    t.string   "description"
-    t.string   "band"
+    t.text   "description"
+    t.text   "band"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
