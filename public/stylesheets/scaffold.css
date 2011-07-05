@@ -1,0 +1,13 @@
+#float-footer {
+    font-size: 0.8em;
+}
+
+#float-footer p.left {
+    float: left;
+    margin-left: 15px;
+}
+
+#float-footer p.right {
+    float: right;
+    margin-right: 15px;
+}
