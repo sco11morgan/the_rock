@@ -1,9 +1,12 @@
 require 'open-uri'
 require 'date'
 
-URL = "http://www.burnvictim.com/list/"
+
+URL = "http://www.burnvictim.com/list/index.html"
 #URL = "http://jon.luini.com/thelist/thelist.txt"
 #URL = "http://localhost:3000/thelist.txt"
+
+puts "loading from #{URL}"
 
 LINES = "
 jun 25 sat Black Balloon, Electric Chair Repair Co., Weapons Of The Future
