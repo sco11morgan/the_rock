@@ -13,8 +13,8 @@ development:
   encoding: unicode
   database: the_rock_development
   pool: 5
-  username: scott
-  password:
+  username: the_rock
+  password: zzthe_rock
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -39,8 +39,8 @@ test:
   encoding: unicode
   database: the_rock_test
   pool: 5
-  username: scott
-  password:
+  username: the_rock
+  password: zzthe_rock
 
 production:
   adapter: postgresql
@@ -48,4 +48,4 @@ production:
   database: the_rock_production
   pool: 5
   username: the_rock
-  password:
+  password: zzthe_rock
