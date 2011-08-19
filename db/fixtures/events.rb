@@ -1,7 +1,8 @@
 require 'open-uri'
 require 'date'
 
-URL = "http://jon.luini.com/thelist/thelist.txt"
+URL = "http://www.burnvictim.com/list/"
+#URL = "http://jon.luini.com/thelist/thelist.txt"
 #URL = "http://localhost:3000/thelist.txt"
 
 LINES = "
