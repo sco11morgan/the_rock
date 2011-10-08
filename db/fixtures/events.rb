@@ -11,7 +11,7 @@ puts "loading from #{URL}"
 LINES = "
 jun 25 sat Black Balloon, Electric Chair Repair Co., Weapons Of The Future
        at Starry Plough, 3101 Shattuck, Berkeley 21+ $10 8:30pm **
-jun 25 sat An Idol's Plague, Not Again, Betty White, Butt Problems
+jun 25 sat An Idol+'s Plague, Not Again, Betty White, Butt Problems
        at Eli's Mile High Club, Oakland 21+ 7pm ** @
 jun 25 sat The Angries (OR), The Stressors, The Paper Bags
        at Tire Beach, Bay End of 24th Street, S.F. a/a free 3pm **
