@@ -2,8 +2,8 @@ require 'open-uri'
 require 'date'
 
 
-URL = "http://www.burnvictim.com/list/index.html"
-#URL = "http://jon.luini.com/thelist/thelist.txt"
+#URL = "http://www.burnvictim.com/list/index.html"
+URL = "http://jon.luini.com/thelist/thelist.txt"
 #URL = "http://localhost:3000/thelist.txt"
 
 puts "loading from #{URL}"
@@ -69,6 +69,7 @@ Berkeley Liberation Radio 104.1FM	www.berkeleyliberationradio.org
     values[:band] = r[11..venue_index]
     values[:venue] = r[(venue_index+4)..(sf_index-3)]
 
+	puts values[:starts_at]
 
     # a bit of a hack, but the regex anchor isn't working for me
 #    puts values[:venue].sub("/^thee ).*/", "")
